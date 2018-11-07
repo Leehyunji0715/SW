@@ -7,6 +7,7 @@ import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
 import 'menu.dart';
 import 'gloals.dart' as globals;
 import 'colors.dart';
+import 'login_page.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -24,10 +25,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
     return Scaffold(
       //backgroundColor: k200,
-   //   appBar: AppBar(
-    //    backgroundColor: k400,
-     //   title: Text('My Page'),
-     // ),
+ //     appBar: AppBar(
+ //       backgroundColor: k400,
+ //       title: Text('My Page'),
+ //     ),
       drawer:MenuPage(),
 body:SafeArea(child:
 
@@ -92,7 +93,13 @@ Column(
       title: Text('로그아웃'),
       trailing: Icon(Icons.cancel),
 
-      onTap: (){},
+        onTap: (){
+          globals.i=1;
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginPage()));
+
+        }
     ),
 
 

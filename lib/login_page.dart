@@ -17,10 +17,10 @@ class LoginPage extends StatefulWidget{
 
 
 class _LoginPageState extends State<LoginPage>{
- 
-  
-   
- 
+
+
+
+
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final GoogleSignIn googleSignIn = new GoogleSignIn();
 
@@ -60,13 +60,14 @@ class _LoginPageState extends State<LoginPage>{
     globals.ourCount=0;
     googleSignIn.signOut();
     print('User signed out');
-  
+
       }
 
   Widget build(BuildContext context){
- 
+
 
        return new Scaffold(
+
         backgroundColor: Colors.white,
         body: Center(
             child: new Form(
@@ -78,11 +79,24 @@ class _LoginPageState extends State<LoginPage>{
               ),
             )
         )
+
+
+         /*
+           body: new Container(
+           decoration: new BoxDecoration(
+           image: new DecorationImage(
+           image: new AssetImage("assets/snuppy.jpg"),
+    fit: BoxFit.cover,
+    ),
+    )
+           )
+
+
+               */
     );
 
     }
-    
-  
+
 
     List<Widget> buildInputs(){
      if(globals.i==1)
@@ -95,11 +109,15 @@ class _LoginPageState extends State<LoginPage>{
 
       SizedBox(height: 45.0),
       new Container(
-      child: new ClipOval(
-        //clipper: CircleClipper(),
-        child: Image.asset('assets/snuppy.jpg'),
-      ),
-     ), 
+
+
+//      child: new ClipOval(
+//        //clipper: CircleClipper(),
+//        child: Image.asset('assets/snuppy.jpg'),
+//      ),
+
+
+     ),
      SizedBox(height: 48.0),
 
      new Padding(
@@ -116,14 +134,14 @@ class _LoginPageState extends State<LoginPage>{
            onPressed: ()=> _signIn()
             .then((FirebaseUser user) => print(user))
             .catchError((e)=>print(e)),
-    
+
            color: Color.fromRGBO(250, 140, 140, 1.0),
-           child: 
+           child:
 
-               
-               Text('Google Log In',style: TextStyle(color: Colors.white)), 
 
-           
+               Text('Google Log In',style: TextStyle(color: Colors.white)),
+
+
               ),
        ),
        ),

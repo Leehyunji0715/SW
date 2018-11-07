@@ -28,6 +28,8 @@ final Firestore store = Firestore.instance;
 
 class HomeState3 extends State<Home3>{
 
+  double a ;
+
 
   List<Item> success = List();
   Item item;
@@ -109,7 +111,16 @@ class HomeState3 extends State<Home3>{
   Widget build(BuildContext context){
 
     int count=0;
-   
+    String img ;
+    double num = 12.0;
+    String heartnum;
+
+
+    num == 0 ? heartnum = 'assets/1-0.png' : num <= 7.0 ? heartnum ='assets/1-1.png' : num <= 14.0 ? heartnum ='assets/1-2.png' : num <= 20.0 ? heartnum ='assets/1-3.png' : num <= 27.0 ? heartnum='assets/1-4.png' : num <= 34.0 ? heartnum='assets/1-5.png' :num <= 40.0 ? heartnum='assets/1-6.png' :num <= 47.0 ? heartnum='assets/1-7.png' :num <= 53.0 ? heartnum='assets/1-8.png' :num <= 61.0 ? heartnum='assets/1-9.png' :num <= 69.0 ? heartnum='assets/1-10.png' :num <= 77.0 ? heartnum='assets/1-11.png' :num <= 85.0 ? heartnum='assets/1-12.png' :num <= 93.0 ? heartnum='assets/1-13.png' :num < 100.0 ? heartnum='assets/1-14.png': heartnum='assets/1-15.png';
+
+
+
+
     CustomSlider gauge = new CustomSlider(
 
       percentage: (count_true/count_all)*100,//여기가 slider의 게이지 차는모양(형태) 부분
@@ -117,13 +128,19 @@ class HomeState3 extends State<Home3>{
       negetiveColor: Color(0xFFFFFFFF),
     );
 
+
+
+
     return Scaffold(
 
    //   appBar: AppBar(backgroundColor:k400, title: new Text('guage'),),
       //drawer:MenuPage(),
       resizeToAvoidBottomPadding: false,
 
-      body: SafeArea(child:  Column(
+      body: SafeArea(
+
+        child:
+        Column(
         children: <Widget>[
           SizedBox(height: 70.0),
           Flexible(
@@ -134,9 +151,33 @@ class HomeState3 extends State<Home3>{
                   child: Flex(
                     direction: Axis.vertical,
                     children: <Widget>[
-                      SizedBox(height: 25.0),
-                      gauge,
-                      Text(percentage = ((count_true/count_all)*100).toString()+'%'),
+
+                      Column(
+
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          SizedBox(height: 150.0,
+                            child:  Image.asset(heartnum),
+
+                          ),
+                          Text('0%',style: TextStyle(fontSize: 50.0))
+                        ],
+
+                      ),
+
+
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          SizedBox(height: 150.0,
+                            child:  Image.asset('assets/1-5.png'),
+                          ),
+                          Text('100%',style: TextStyle(fontSize: 50.0))
+                        ],
+                      ),
+
+
+                      // Text(percentage = ((count_true/count_all)*100).toString()+'%'),
 
                       SizedBox(height: 40.0),
                       new RaisedButton(
@@ -145,6 +186,7 @@ class HomeState3 extends State<Home3>{
                             fontWeight: FontWeight.w600,color: Colors.white),
                         ),
                         onPressed: (){
+                          print(heartnum);
                           item.title=globals.userName;
 
                           handleSubmit();
@@ -165,37 +207,6 @@ class HomeState3 extends State<Home3>{
           ),
 
           SizedBox(height: 15.0),
-          new Align(
-            alignment: Alignment.bottomLeft,
-            child: new Text('    Today \'s people of achievement', style: new TextStyle(fontSize: 17.0,
-                fontWeight: FontWeight.w600,color: Colors.black),
-            ),),
-
-          Flexible(
-
-            child: FirebaseAnimatedList(
-
-                query: itemRef,
-
-                itemBuilder: (BuildContext context, DataSnapshot snapshot,
-                    Animation<double> animation, int index){
-                  print(index);
-                  globals.ourCount=(index+1)*10;
-                  globals.ourCount2 = (index+1.0)*10.0;
-                  count=1;
-
-                  return new ListTile(
-
-                    leading: Icon(Icons.favorite, color: Colors.red,),
-                    title: success[index].title==null?'empty':Text(success[index].title),
-                    subtitle: success[index].body==null?'empty':Text(success[index].body),
-                  );
-
-                }
-            ),
-          ),
-
-
         ],
       ),
       )

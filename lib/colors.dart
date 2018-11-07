@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-
+/*
 const k10 = const Color(0xFFFEF3F9);
 const k50 = const Color(0xFFFEEAE6);
 const k100 = const Color(0xFFFEDBD0);
@@ -14,7 +14,7 @@ const kErrorRed = const Color(0xFFC5032B);
 
 const kSurfaceWhite = const Color(0xFFFFFBFA);
 const kBackgroundWhite = Colors.white;
-
+*/
 
 /*
 const k10 = const Color(0xFFdbf2ff);
@@ -36,3 +36,13 @@ const k500 =const Color(0xFF6293ad);
 const k600 = const Color(0xFF47809c);
 const k900 = const Color(0xFF093546);
 */
+
+
+const k10 = const Color(0xFFdfe9d7);
+const k50 = const Color(0xFFcfd8dc);
+const k100 = const  Color(0xFFcbdac0);
+const k200 = const Color(0xFFfff9c4);
+const k400 = const Color(0xFF91a77f);
+const k500 =const Color(0xFF6293ad);
+const k600 = const Color(0xFF47809c);
+const k900 = const Color(0xFF093546);

@@ -23,7 +23,7 @@ Widget build(BuildContext context){
     return MaterialApp(
         initialRoute: '/home',
         routes: {
-          '/home':(context) => MyHome(),
+          '/home':(context) =>LoginPage(),
         },
         title: 'kodeversitas',
         debugShowCheckedModeBanner: false,

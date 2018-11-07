@@ -12,21 +12,21 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 final FirebaseApp app = FirebaseApp
   (  
-      options : FirebaseOptions(
+    options : FirebaseOptions(
     googleAppID: '1:297718011993:android:2b3685a1f6154871',
     apiKey: 'AIzaSyBzSY-SXuZ52uOOy59-tXESQOaTSNDMqQg',
     databaseURL: 'https://codingtalkrc.firebaseio.com',
 ), name: "[DEFAULT]");
 
-class Home3 extends StatefulWidget{
-  HomeState3 createState() =>HomeState3();
+class Home extends StatefulWidget{
+  HomeState createState() =>HomeState();
 }
 
 
 /*현지가 선언한 파이어스토어 인스턴스...*/
 final Firestore store = Firestore.instance;
 
-class HomeState3 extends State<Home3>{
+class HomeState extends State<Home>{
 
   double a ;
 
@@ -81,7 +81,7 @@ class HomeState3 extends State<Home3>{
        store.collection('uidc').document(globals.userUID).updateData({"complete" : true});
      }
      );
-//      print("~~~");
+     //print("~~~");
      // 이 부분에서는 complement의 true의 개수를 읽어들여서 전체 게이지 개수를 정한다.
      StreamBuilder (
       stream: Firestore.instance.collection('uidc').snapshots(),

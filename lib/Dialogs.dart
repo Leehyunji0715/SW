@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'gloals.dart' as globals;
 import 'colors.dart';
 //import 'posting.dart';
-
 class Dialogs{
   information(BuildContext context, String title, String description){
     return showDialog(

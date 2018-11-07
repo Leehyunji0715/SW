@@ -1,18 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/services.dart';
 import 'gloals.dart' as globals;
 import 'colors.dart';
 
-class lala extends StatefulWidget{
+class Posting extends StatefulWidget{
   static String tag ='register-page';
-  lalaState createState() => new lalaState();
-
+  PostingState createState() => new PostingState();
 }
 
 
-class lalaState extends State<lala> {
+class PostingState extends State<Posting> {
   final Firestore storage = Firestore.instance;
-
   String _name;
   String _email;
 
@@ -33,9 +32,7 @@ class lalaState extends State<lala> {
 
 
   
-  Widget build(BuildContext context){ 
-    
-
+  Widget build(BuildContext context){
     return new Scaffold(
         resizeToAvoidBottomPadding: false,
         backgroundColor: Colors.white,
@@ -58,7 +55,6 @@ class lalaState extends State<lala> {
    List<Widget> buildInputs(){
 
     return[
-
       new TextFormField(
     //   style: new TextStyle(
     //   fontSize: 2.0,
@@ -66,9 +62,9 @@ class lalaState extends State<lala> {
       
     //   color: Colors.black                  
     // ),
-    maxLines: 5,
-  //  keyboardType: TextInputType.multiline,
-        textInputAction: TextInputAction.go,
+      maxLines: 5,
+      keyboardType: TextInputType.multiline,
+      //textInputAction: TextInputAction.go,
       decoration: InputDecoration(
         hintText: 'CONTEXT',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -82,25 +78,18 @@ class lalaState extends State<lala> {
         print('Name can\'t be enpty');
       }
       else{
-        
             storage.runTransaction((Transaction transaction)async{
-      storage.collection('uide').document(globals.userUID).collection(globals.userUID).document().setData({"posting": value,"editing":false,"uid":globals.userUID,"user":globals.userName});//.setData({"complete" : false,"mission" : true});
-    }
+                storage.collection('uide').document(globals.userUID).collection(globals.userUID).document().setData({"posting": value,"editing":false,"uid":globals.userUID,"user":globals.userName});//.setData({"complete" : false,"mission" : true});
+        }
     );
- 
-
-
                   var now=new DateTime.now();
               Firestore.instance
               .runTransaction((Transaction transaction) async{
                 CollectionReference reference=
                 Firestore.instance.collection('uido');
-
-
-                
                 await reference
                       .add({"posting": value,"editing":false,"uid":globals.userUID,"date":now,"user":globals.userName});
-        
+
               });
 
       }
@@ -108,10 +97,7 @@ class lalaState extends State<lala> {
     // validator: (value) =>value.isEmpty ? 'Name can\'t be enpty':,
      onSaved: (value) =>_name =value,
      ),
-
-
      SizedBox(height: 10.0),
-
      new Padding(
        padding: EdgeInsets.symmetric(vertical: 16.0),
        child: Material(
@@ -127,10 +113,6 @@ class lalaState extends State<lala> {
               ),
        ),
       )
-
-
     ];
    }
-
-
 }

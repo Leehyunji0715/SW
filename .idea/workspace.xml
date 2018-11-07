@@ -6,24 +6,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c98f0905-a99d-4cf3-8d45-748ececdc149" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/indiaprince.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flutter-plugins" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chaerin-master-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chaerin-master-master.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+    <list default="true" id="c98f0905-a99d-4cf3-8d45-748ececdc149" name="Default" comment="&quot;first&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Dialogs.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Dialogs.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/My_page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/addPost.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/addPost.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/gloals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/gloals.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/login_page.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mainPageMH.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/mainPageMH.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mainhome.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menu.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mynewPosting.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/newPosting.dart" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,23 +48,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewMyPost.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewMyPost.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/ViewMyPost.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="285">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyPage.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyPage.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/MyPage.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-              <folding>
-                <element signature="e#3#42#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -182,9 +163,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="183" />
     <option name="y" value="23" />
-    <option name="width" value="1257" />
+    <option name="width" value="998" />
     <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -337,22 +317,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="23" width="1257" height="837" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="998" height="837" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49638057" weight="0.32992327" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.2691358" side_tool="true" visible="true" weight="0.35285914" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5125523" side_tool="true" visible="true" weight="0.31241283" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32992327" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7308642" visible="true" weight="0.35285914" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7308642" weight="0.35285914" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49638057" weight="0.32992327" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.48877805" weight="0.32914925" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4874477" visible="true" weight="0.31241283" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19753087" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25104603" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.26467448" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -588,20 +567,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/MyPage.dart">
+    <entry file="file://$PROJECT_DIR$/lib/ViewMyPost.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
-          <folding>
-            <element signature="e#3#42#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="285">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/ViewMyPost.dart">
+    <entry file="file://$PROJECT_DIR$/lib/MyPage.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="105">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
